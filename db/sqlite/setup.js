@@ -1,5 +1,5 @@
 const db_name = process.env.NODE_ENV ? process.env.NODE_ENV : 'development';
-const db = require('./connect.js').connect(`${db_name}.sqlite3`);
+const db = require('./connect.js').connect(`db/sqlite/${db_name}.sqlite3`);
 
 const seed_data = [
   {":@computed_region_43wa_7qmu":"9",":@computed_region_6mkv_f3dw":"21194",":@computed_region_bdys_3d7i":"377",":@computed_region_rpca_8um6":"40",":@computed_region_vrxf_vc4k":"1",":created_at":"2021-02-23T16:03:12.714Z",":id":"row-yfqn_bkdi~7x27",":updated_at":"2021-02-23T16:03:14.703Z",":version":"rv-um8t-ip8h-bu6z","zip_code":"60616","date":"2021-02-22T00:00:00.000","total_doses_daily":"101","total_doses_cumulative":"9686","_1st_dose_daily":"45","_1st_dose_cumulative":"6716","_1st_dose_percent_population":"0.124","vaccine_series_completed_daily":"56","vaccine_series_completed_cumulative":"2970","vaccine_series_completed_percent_population":"0.055","population":"54197","zip_code_location":{"type":"Point","coordinates":[-87.629531,41.844869]},"row_id":"60616-20210222"}
