@@ -1,2 +1,6 @@
 node_modules/
 *.sqlite3
+db/mongo/var/*
+!db/mongo/var/.keep
+!db/mongo/var/log/.keep
+!db/mongo/var/mongodb/.keep
