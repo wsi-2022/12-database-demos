@@ -1,6 +1,11 @@
 const mdb = require('./connect.js');
 const url = process.env.MONGO_URL;
 
+if (!url) {
+  console.log('Missing MONGO_URL environment variable; see README.md');
+  return;
+}
+
 const db_name = 'vax_data';
 
 // TODO: Set raw JSON data for insertion
