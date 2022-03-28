@@ -1,0 +1,18 @@
+{
+  "name": "12-database-demos",
+  "version": "0.0.0",
+  "description": "Quick SQL and NoSQL connection and setup demos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mongo:start": "mongod --config db/mongo/mongod.dev.conf",
+    "mongo:setup": "node db/mongo/setup.js",
+    "sql:setup": "node db/sqlite/setup.js"
+  },
+  "author": "Karl Stolley <kstolley@iit.edu>",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.4",
+    "sqlite3": "^5.0.2"
+  }
+}
